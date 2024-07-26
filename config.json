@@ -1,0 +1,35 @@
+{
+    "actions": [
+        {
+            "type": "command",
+            "label": "Neovim: Create New",
+            "command_line": "kitty nvim",
+            "cwd": "%f",
+            "permissions": "read",
+            "filetypes": [
+                "directory",
+                "!standard"
+            ]
+        },
+        {
+            "type": "command",
+            "label": "Open With Neovim",
+            "command_line": "kitty nvim %F",
+            "filetypes": [
+                "!directory",
+                "standard"
+            ]
+        },
+        {
+            "type": "command",
+            "label": "Open in Kitty",
+            "command_line": "kitty",
+            "cwd": "%f",
+            "filetypes": [
+                "directory",
+                "!standard"
+            ]
+        }
+    ],
+    "debug": false
+}
